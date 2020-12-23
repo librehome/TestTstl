@@ -1,0 +1,52 @@
+{
+	"name": "libre-typescript",
+	"version": "4.1.1",
+	"description": "TypeScript and JavaScript language support for Monaco Editor",
+	"scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+		"import-typescript": "node ./scripts/importTypescript"
+	},
+	"author": "Microsoft Corporation",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/monaco-typescript"
+	},
+	"bugs": {
+		"url": "https://github.com/Microsoft/monaco-typescript/issues"
+	},
+	"module": "./release/esm/main.js",
+	"typings": "./release/esm/main.d.ts",
+	"dependencies": {
+		"assert": "^2.0.0",
+		"fs": "0.0.1-security",
+		"path": "^0.12.7",
+		"request": "^2.88.2",
+		"stream": "0.0.2"
+	},
+	"devDependencies": {
+		"@typescript/vfs": "^1.3.0",
+		"husky": "^4.3.0",
+		"monaco-editor-core": "^0.21.0",
+		"monaco-languages": "^2.1.0",
+		"monaco-plugin-helpers": "^1.0.3",
+		"prettier": "^2.1.2",
+		"pretty-quick": "^3.0.2",
+		"requirejs": "^2.3.6",
+		"terser": "^5.3.2",
+		"process": "^0.11.10",
+		"raw-loader": "^4.0.2",
+		"ts-loader": "^8.0.12",
+		"typescript": "4.0.3",
+		"typescript-to-lua": "^0.36.0",
+		"webpack": "^5.10.3",
+		"webpack-cli": "^4.2.0",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	}
+}

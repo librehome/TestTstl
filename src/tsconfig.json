@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "amd",
+		"moduleResolution": "node",
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"outDir": "../out/amd",
+		"declaration": true,
+        "target": "es2019",
+        "lib": ["es2019", "dom", "dom.iterable", "webworker"],
+		"strict": true
+	}
+}
